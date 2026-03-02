@@ -16,12 +16,58 @@ body {
 }
 
 header {
+  position: relative;
   text-align: center;
   padding: 20px 0;
   margin-bottom: 30px;
   background-color: #1a237e;
   color: white;
   border-radius: 5px;
+}
+
+#auth-controls {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+#user-button {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+#auth-panel {
+  position: absolute;
+  right: 0;
+  top: 44px;
+  width: 250px;
+  background: white;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  z-index: 100;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+#teacher-session {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#teacher-name {
+  font-weight: bold;
+  color: #1a237e;
 }
 
 header h1 {
@@ -183,6 +229,7 @@ button:hover {
 }
 
 .info {
+  margin-bottom: 12px;
   background-color: #d1ecf1;
   color: #0c5460;
   border: 1px solid #bee5eb;
